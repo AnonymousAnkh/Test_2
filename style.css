@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Pacifico&family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Gloock&family=Pacifico&family=Skranji&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+:root{
+    --text-color:rgb(70, 155, 105);
+    --main-color: rgb(46, 44, 44);
+    --bg-color: #cae8ca;
+    --hover-color: white;
+    --hover-color2: goldenrod;
+}
+body{
+    background-color: #cae8ca;
+    min-width: 200px;
+}
+
+/* scroll bar  */
+html::-webkit-scrollbar {
+    width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+html::-webkit-scrollbar-thumb {
+  background: aquamarine;
+  border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: aqua;
+}
+
+/* nav1  */
+.nav1 h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(70, 155, 105);
+}
+.nav1 span{
+    margin-top: 10px;
+    font-family: 'Gloock', serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.nav1 .ankh{
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav1{
+    background-color: #cae8ca;
+    height: 170px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav1 h1:hover{
+    color: goldenrod;
+}
+.nav1 h1 .front-i{
+    padding-right: 10px;
+}
+.nav1 h1 .back-i{
+    padding-left: 20px;
+}
+/* nav1 close  */
+
+/* nav2  */
+.nav2{
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+}
+.nav2 ul{
+    display: flex;
+}
+.nav2 ul li{
+    list-style: none;
+}
+.nav2 a {
+    text-decoration: none;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: goldenrod;
+}
+.nav2 ul li:hover{
+    color: #fefefe;
+    background-color: rgb(70, 155, 105);
+}
+.btn {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: #fefefe;
+    padding: 6px;
+    border-radius: 5px;
+}
+.nav2 .btn1{
+    margin-right: 10px;
+}
+.nav2 .btn2{
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color: goldenrod;
+    color: black;
+}
+/* nav2 close  */
+
+/* cover1  */
+.cover1, .cover2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.cover1 .cover1-text {
+    position: absolute;
+}
+
+.cover1 img, .cover2 img{
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    width: 100%;
+}
+.cover1-text span {
+    font-family: 'Fuggles', cursive;
+    font-size: 4rem;
+    font-weight: 900;
+    color: black;
+}
+.cover1-text h1, .cover2-text h1{
+    font-family: 'Fuggles', cursive;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.cover1-text span:hover, .cover1-text h1:hover, .cover2-text h1:hover, .cover2-text span:hover  {
+    color: var(--hover-color);
+}
+/* cover1 end  */
+
+/* cover2  */
+.cover2-text span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: black;
+}
+
+.cover2 .cover2-text {
+    position: absolute;
+}
+/* cover2 end  */
+
+/* content  */
+.content h2{
+    font-family: 'Skranji', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.content h2:hover{
+    color: var(--hover-color);
+}
+
+.content .box {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    margin: 0 50px;
+    gap: 1rem;
+}
+
+.box1 .box-img {
+    width: 100%;
+    height: 370px;
+}
+.box1 .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+.box1 .box-img img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(8px 8px 10px #4CAF50);
+}
+.box-a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.box-a:hover{
+    color: var(--hover-color2);
+}
+
+/* content end  */
+
+/* contact  */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.contact h3 {
+    font-weight: 700;
+    font-family: 'Skranji', cursive;
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.contact h3:hover{
+    color: var(--hover-color2);
+}
+
+.contact .contact-form{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+.contact .email {
+    background-color: aqua;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.contact .btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+/* contact end  */
+
+/* footer  */
+.logo {
+    font-family: 'Gloock', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 3px 5px;
+}
+.logo:hover {
+    color: var(--hover-color2);
+    transform: scale(1.2);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .social{
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+}
+.social .bx{
+    font-family: 'Gloock', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 10px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+.social .bx:hover{
+    transform: scale(1.2);
+    color: var(--hover-color);
+}
+
+.footer2 {
+    text-align: center;
+    background-color: #4CAF50;
+}
+.footer2 h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 5px 0;
+}
+.footer2 h4:hover{
+    color: aqua;
+    transform: scale(1.2);
+}
+/* footer end  */
+
+/* responsive  */
+@media (max-width:1200px) {
+    .cover1-text span, .cover2-text span {
+        font-size: 3rem;
+        font-weight: 800;
+    }
+}
+@media (max-width:900px) {
+    .cover1-text span, .cover2-text span {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .cover1-text h1, .cover1-text h1 {
+        font-size: 1.5rem;
+    }
+    .btn{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 700px) {
+    .cover1-text span, .cover2-text span {
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    .cover1-text h1, .cover1-text h1 {
+        font-size: 1.2rem;
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+    .content h2{
+        font-size: 2.5rem;
+    font-weight: 600;
+    }
+}
+@media (max-width:500px) {
+    .cover1-text span, .cover2-text span {
+        font-size: 1.9rem;
+        font-weight: 800;
+    }
+    .cover1-text h1, .cover1-text h1 {
+        font-size: 0.9rem;
+    }
+    .btn{
+        font-size: 0.6rem;
+    }
+    .footer a, .footer .bx{
+        font-size: 1.5rem;
+    }
+    .footer2 h4{
+        font-size: 1.8rem;
+    }
+    .contact {
+        margin: 0 10px;
+    }
+    .content h2{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+@media (max-width:400px) {
+    .cover1-text span, .cover2-text span {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+    .cover1-text h1, .cover1-text h1 {
+        font-size: 0.6rem;
+    }
+    .btn{
+        font-size: 0.4rem;
+    }
+    .footer a, .footer .bx{
+        font-size: 1rem;
+    }
+    .footer2 h4{
+        font-size: 1rem;
+    }
+        .contact {
+        margin: 0 10px;
+    }
+    .content h2{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}
+@media (max-width:320px) {
+    .cover1-text span, .cover2-text span {
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    .cover1-text h1, .cover1-text h1 {
+        font-size: 0.4rem;
+    }
+    .btn{
+        font-size: 0.3rem;
+    }
+        .footer a, .footer .bx{
+        font-size: 0.5rem;
+    }
+    .footer2 h4{
+        font-size: 0.5rem;
+    }
+        .contact {
+        margin: 0 10px;
+    }
+}
